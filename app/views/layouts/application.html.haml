@@ -1,0 +1,179 @@
+!!!
+%html
+  %head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %title CleverCodePage
+  = csrf_meta_tags
+  / Font Avenir CSS
+  %link{:href => "fonts/fontAvenir/font.css", :rel => "stylesheet"}/
+  / Main Menu CSS
+  %link{:href => "css/meanmenu.min.css", :rel => "stylesheet"}/
+  / Normalize CSS
+  %link{:href => "css/normalize.css", :rel => "stylesheet"}/
+  / Main CSS
+  %link{:href => "css/main.css", :rel => "stylesheet"}/
+  / Bootstrap CSS
+  %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+  / Font-awesome CSS
+  %link{:href => "css/font-awesome.css", :rel => "stylesheet"}/
+  / Animate CSS
+  %link{:href => "css/animate.min.css", :rel => "stylesheet"}/
+  / Font-flat CSS
+  %link{:href => "fonts/flaticon.css", :rel => "stylesheet"}/
+  / Owl Caousel CSS
+  %link{:href => "vendor/OwlCarousel/owl.carousel.min.css", :rel => "stylesheet"}/
+  %link{:href => "vendor/OwlCarousel/owl.theme.default.min.css", :rel => "stylesheet"}/
+  / nivo slider CSS
+  %link{:href => "vendor/slider/css/nivo-slider.css", :rel => "stylesheet", :type => "text/css"}/
+  %link{:href => "vendor/slider/css/preview.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  / Custom CSS
+  %link{:href => "style.css", :rel => "stylesheet"}/
+  %link{:href => "css/videoBack.css", :rel => "stylesheet"}/
+  %link(rel="stylesheet" href="css/component.css")/
+  %link(rel="stylesheet" href="css/hovereffect.css")/
+  /%script{:src => "js/custom.js"}
+  %script{:src => "js/vendor/modernizr-2.8.3.min.js"}
+  / Chart map CSS
+  %link{:href => "https://www.amcharts.com/lib/3/plugins/export/export.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+  :css
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+    #chartdiv a[title="Interactive JavaScript maps"] {
+      display: none !important; 
+    }
+  / Favicon
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "60x60"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "120x120"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "144x144"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "152x152"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "apple-touch-icon", :sizes => "180x180"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "192x192", :type => "image/png"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
+  %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+  
+
+%body
+  %div{:class => "wraper"}
+    = yield
+  #preloader
+  %script{:src => "js/jquery-2.2.4.min.js", :type => "text/javascript"}
+  %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"}
+  / Plugins js
+  %script{:src => "js/plugins.js", :type => "text/javascript"}
+  / Bootstrap js
+  %script{:src => "js/bootstrap.min.js", :type => "text/javascript"}
+  / Meanmenu Js
+  %script{:src => "js/jquery.meanmenu.min.js", :type => "text/javascript"}
+  / Counter Js
+  %script{:src => "js/jquery.counterup.min.js", :type => "text/javascript"}
+  %script{:src => "js/waypoints.min.js", :type => "text/javascript"}
+  / WOW JS
+  %script{:src => "js/wow.min.js"}
+  / Nivo slider js
+  %script{:src => "vendor/slider/js/jquery.nivo.slider.js", :type => "text/javascript"}
+  %script{:src => "vendor/slider/home.js", :type => "text/javascript"}
+  / Srollup js
+  %script{:src => "js/jquery.scrollUp.min.js", :type => "text/javascript"}
+  / Validator js
+  %script{:src => "js/validator.min.js", :type => "text/javascript"}
+  / One Page menu action JS
+  %script{:src => "js/jquery.nav.js", :type => "text/javascript"}
+  / Custom Js
+  %script{:src => "js/main.js", :type => "text/javascript"}
+  / Chart map JS
+  %script{:src => "https://www.amcharts.com/lib/3/ammap.js"}
+  %script{:src => "https://www.amcharts.com/lib/3/maps/js/worldLow.js"}
+  %script{:src => "https://www.amcharts.com/lib/3/plugins/export/export.min.js"}
+  %script{:src => "https://www.amcharts.com/lib/3/themes/chalk.js"}
+  %script{:src => "js/videoback.js"}
+  %script{:src => "js/classie.js"}
+  %script{:src => "js/cbpScroller.js"}
+  :javascript
+    $('#preloader').delay(2500).fadeOut('slow', function() {
+      setTimeout()
+      $(this).remove();
+    });
+
+  :javascript
+    var latlong = {};
+    latlong["CO"] = { latitude: 4.7, longitude: -74 };
+    latlong["SE"] = { latitude: 65, longitude: 22 };
+    latlong["US"] = { latitude: 25, longitude: -80 };
+
+    var mapData = [
+      { code: "CO", name: "Colombia", value: 41927125, color: "#FF0000" },
+      { code: "SE", name: "Sweden", value: 41927125, color: "#FF0000" },
+      { code: "US", name: "United States", value: 41927125, color: "#FF0000" }
+    ];
+
+    // get min and max values
+    var minBulletSize = 3;
+    var maxBulletSize = 70;
+    var min = Infinity;
+    var max = -Infinity;
+    for (var i = 0; i < mapData.length; i++) {
+      var value = mapData[i].value;
+      if (value < min) {
+        min = value;
+      }
+      if (value > max) {
+        max = value;
+      }
+    }
+
+    // it's better to use circle square to show difference between values, not a radius
+    var maxSquare = maxBulletSize * maxBulletSize * 2 * Math.PI;
+    var minSquare = minBulletSize * minBulletSize * 2 * Math.PI;
+
+    // create circle for each country
+    var images = [];
+    for (var i = 0; i < mapData.length; i++) {
+      var dataItem = mapData[i];
+      var value = dataItem.value;
+      // calculate size of a bubble
+      var square =
+        (value - min) / (max - min) * (maxSquare - minSquare) + minSquare;
+      if (square < minSquare) {
+        square = minSquare;
+      }
+      var size = Math.sqrt(square / (Math.PI * 2));
+      var id = dataItem.code;
+
+      images.push({
+        type: "circle",
+        theme: "chalk",
+        width: size,
+        height: size,
+        color: dataItem.color,
+        longitude: latlong[id].longitude,
+        latitude: latlong[id].latitude,
+        title: dataItem.name,
+        value: value
+      });
+    }
+     // build map
+    var map = AmCharts.makeChart("chartdiv", {
+      type: "map",
+      projection: "winkel3",
+      areasSettings: {
+        unlistedAreasColor: "#6B84CD",
+        unlistedAreasAlpha: 1
+      },
+      dataProvider: {
+        map: "worldLow",
+        images: images
+      },
+      export: {
+        enabled: false
+      }
+    });
+:javascript
+  new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+  new cbpScroller( document.getElementById( 'cbp-so-scroller2' ) );

@@ -1,0 +1,26 @@
+%section#contact
+  .container
+    .row
+      .col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.text-left
+        %h2.text-center CONTACT US
+        %form{:action => "https://formspree.io/infclevercode@gmail.com", :method => "POST"}
+          .form-group
+            %label{:for => "InputFullName"} FULL NAME
+            %input#InputFullName.form-control{:name => "name", :type => "text"}/
+          .form-group
+            %label{:for => "InputEmail"} EMAIL ADDRESS
+            %input#InputEmail.form-control{:name => "_replyto", :type => "email"}/
+          .form-group
+            %label{:for => "exampleFormControlTextarea1"} MESSAGE
+            %textarea#exampleFormControlTextarea1.form-control{:name => "message", :rows => "5"}
+          .form-group.text-center
+            %input.btn.btn-primary.btn-block{:type => "submit", :value => "SEND"}/
+    .row
+      .social
+        %a{:href => "https://www.instagram.com/clevercode_co/", :target => "_blank"}
+          %i.fa.fa-instagram{"aria-hidden" => "true"}
+        %a{:href => "https://www.facebook.com/Clever-Code-2005698779700348/", :target => "_blank"}
+          %i.fa.fa-facebook{"aria-hidden" => "true"}
+        %a{:href => "https://twitter.com/clevercode_co", :target => "_blank"}
+          %i.fa.fa-twitter{"aria-hidden" => "true"}
+= render 'partials/footerCopy'

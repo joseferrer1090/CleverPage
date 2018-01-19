@@ -1,0 +1,38 @@
+%header
+  .header-one
+    #sticker.header-top-area
+      .container
+        .row
+          .col-lg-3.col-md-3.col-sm-12.col-xs-12
+            .logo-area
+              %a{:href => "#home"}
+                %img.img-responsive.logoplsbigger{:alt => "logo", :src => "img/2018_cc-idf.png"}/
+          .col-lg-9.col-md-9.col-sm-12.col-xs-12
+            .main-menu
+              %nav
+                %ul#navOnePage
+                  %li
+                    %a{:href => "#home"} Home
+                  %li
+                    %a{:href => "#products"} Products
+                  %li
+                    %a{:href => "#ourteam"} Team
+                  %li
+                    %a{:href => "#contact"} Contact
+  / mobile-menu-area start
+  .mobile-menu-area
+    .container
+      .row
+        .col-md-12
+          .mobile-menu
+            %nav#dropdown
+              %ul
+                %li
+                  %a{:href => "#home"} Home
+                %li
+                  %a{:href => "#products"} Products
+                %li
+                  %a{:href => "#ourteam"} Team
+                %li
+                  %a{:href => "#contact"} Contact
+  / mobile-menu-area end
