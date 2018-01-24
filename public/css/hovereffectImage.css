@@ -1,0 +1,9 @@
+#image {
+    background-image: url('../img/fotos/cc-gro-a.png');
+    background-size: 390px 648px;
+}
+
+#image:hover{
+    background: url('../img/fotos/cc-gro-h.png');
+    background-size: 390px 648px;
+}

@@ -2,6 +2,8 @@
 %html
   %head
   %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+  %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
   %title CleverCodePage
   = csrf_meta_tags
   / Font Avenir CSS
@@ -29,8 +31,10 @@
   / Custom CSS
   %link{:href => "style.css", :rel => "stylesheet"}/
   %link{:href => "css/videoBack.css", :rel => "stylesheet"}/
-  %link(rel="stylesheet" href="css/component.css")/
-  %link(rel="stylesheet" href="css/hovereffect.css")/
+  %link{:href => "css/hovereffectimage.css", :rel => "stylesheet"}
+  %link{:href => "css/component.css", :rel => "stylesheet"}/
+  %link{:href => "css/hovereffect.css", :rel => "stylesheet"}/
+  %link{:href => "css/hovereffectimage.css", :rel => "stylesheet"}/
   /%script{:src => "js/custom.js"}
   %script{:src => "js/vendor/modernizr-2.8.3.min.js"}
   / Chart map CSS
