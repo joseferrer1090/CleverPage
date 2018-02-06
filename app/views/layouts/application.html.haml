@@ -61,12 +61,12 @@
   %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
   %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
   %link{:href => "img/2018_cc-favicon.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
-  %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "http://code.jquery.com/jquery-2.2.4.min.js"}
-
+  
 %body
   %div{:class => "wraper"}
     = yield
   #preloader
+  %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "http://code.jquery.com/jquery-2.2.4.min.js"}
   %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"}
   / Plugins js
   %script{:src => "js/plugins.js", :type => "text/javascript"}
@@ -98,11 +98,12 @@
   %script{:src => "js/videoback.js"}
   %script{:src => "js/classie.js"}
   %script{:src => "js/cbpScroller.js"}
+
   :javascript
-    $('#preloader').delay(2500).fadeOut('slow', function() {
-      setTimeout()
-      $(this).remove();
-    });
+      $('#preloader').delay(2500).fadeOut('slow', function() {
+        setTimeout()
+        $(this).remove();
+      });
 
   :javascript
     var latlong = {};
